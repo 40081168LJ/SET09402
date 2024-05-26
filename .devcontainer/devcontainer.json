@@ -23,7 +23,10 @@
 	// }
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "dotnet restore",
+    "postCreateCommand": [
+		"dotnet restore",
+		"dotnet workload restore [/workspaces/SET09402/Haulage/Haulage.csproj::TargetFramework=net8.0-android] --project Haulage/Haulage.csproj"
+],
 
 	// Configure tool-specific properties.
 	"customizations": {
