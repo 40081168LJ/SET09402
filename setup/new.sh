@@ -4,11 +4,11 @@
 if [ $(id -u) -ne 0 ]
 then
   echo "ERROR: This script must be run with sudo"
-  echo "       sudo bash -x $(basename "$0")
+  echo "       sudo bash -x $(basename '$0')"
   exit
 fi
 
-START_DIR=$PWD
+START_DIR=$PWD                  # remember starting directory
 apt update                      # update apt repository information
 apt install default-jdk -y      # install jdk
 apt install android-sdk -y      # install Android sdk
