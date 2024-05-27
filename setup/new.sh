@@ -3,6 +3,7 @@
 cd Haulage                      # change into project root directory
 dotnet workload restore         # restore MAUI workloads
 dotnet restore                  # restore project
+apt update                      # update apt repository information
 apt install default-jdk -y      # install jdk
 apt install android-sdk         # install Android sdk
 cd /usr/lib/android-sdk         # change into Android sdk directory
