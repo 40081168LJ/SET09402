@@ -23,7 +23,7 @@
 	// }
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "cd ./Haulage && pwd && dotnet restore",
+    "postCreateCommand": "bash ./setup/new.sh",
 
 	// Configure tool-specific properties.
 	"customizations": {
