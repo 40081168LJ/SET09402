@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Haulage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35c2683e71902cb8495fec361b299bdbe55ae9f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06ca6bb2295b73e8824c531d51d5c07cb95881d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Haulage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Haulage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
