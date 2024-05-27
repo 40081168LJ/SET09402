@@ -23,7 +23,7 @@
 	// }
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "sudo bash ./setup/new.sh",
+    // "postCreateCommand": "sudo bash ./setup/new.sh",
 
 	// Configure tool-specific properties.
 	"customizations": {
