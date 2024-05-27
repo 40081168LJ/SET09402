@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "Haulage.sln"
+    "dotnet.defaultSolution": "Haulage.sln",
+    "maui.configuration.androidSdkPreferredPath": "/usr/lib/android-sdk"
 }
