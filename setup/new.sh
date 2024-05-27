@@ -21,7 +21,8 @@
 # echo y | ./sdkmanager --update --sdk_root=/usr/lib/android-sdk/
 # cd ${START_DIR}/Haulage         # change into project root directory
 cd Haulage
-sudo dotnet workload restore         # restore MAUI workloads
-dotnet build -t:InstallAndroidDependencies -f:net8.0-android -p:AndroidSdkDirectory="${HOME}/android-sdk" -p:JavaSdkDirectory="${HOME}/jvm" -p:AcceptAndroidSDKLicenses=True
+sudo dotnet workload restore      # restore MAUI workloads
+                                  # install android dependencies. Env vars are set in devcontainer.json
+dotnet build -t:InstallAndroidDependencies -f:net8.0-android -p:AndroidSdkDirectory="${ANDROID_HOME}" -p:JavaSdkDirectory="${JAVA_HOME}" -p:AcceptAndroidSDKLicenses=True
 dotnet restore                  # restore project
 echo Done                       # report end of script

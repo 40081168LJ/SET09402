@@ -13,8 +13,8 @@
 
 	// Set environment variables
 	"containerEnv": {
-		"JAVA_HOME": "${HOME}/jvm",
-		"ANDROID_HOME": "${HOME}/android-sdk"
+		"JAVA_HOME": "/home/vscode/jvm",
+		"ANDROID_HOME": "/home/vscode/android-sdk"
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [5000],
