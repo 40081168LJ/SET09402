@@ -34,7 +34,8 @@
 		// Add the IDs of extensions you want installed when the container is created.
 		"extensions": [
 			"streetsidesoftware.code-spell-checker",
-			"ms-dotnettools.dotnet-maui"
+			"ms-dotnettools.dotnet-maui",
+			"toroxx.vscode-avdmanager"
 		]
 		}
 	}
