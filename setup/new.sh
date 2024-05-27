@@ -1,12 +1,12 @@
 # Run this script with sudo after the creation of a new codespace with
 # sudo bash -x new.sh
 
-if [ $(id -u) -ne 0 ]
-then
-  echo "ERROR: This script must be run with sudo"
-  echo "       sudo bash -x $(basename '$0')"
-  exit
-fi
+# if [ $(id -u) -ne 0 ]
+# then
+#   echo "ERROR: This script must be run with sudo"
+#   echo "       sudo bash -x $(basename '$0')"
+#   exit
+# fi
 
 # START_DIR=$PWD                  # remember starting directory
 # apt update                      # update apt repository information
@@ -21,7 +21,7 @@ fi
 # echo y | ./sdkmanager --update --sdk_root=/usr/lib/android-sdk/
 # cd ${START_DIR}/Haulage         # change into project root directory
 cd Haulage
+sudo dotnet workload restore         # restore MAUI workloads
 dotnet build -t:InstallAndroidDependencies -f:net8.0-android -p:AndroidSdkDirectory="${HOME}/android-sdk" -p:JavaSdkDirectory="${HOME}/jvm" -p:AcceptAndroidSDKLicenses=True
-dotnet workload restore         # restore MAUI workloads
 dotnet restore                  # restore project
 echo Done                       # report end of script

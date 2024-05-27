@@ -11,9 +11,11 @@
         }
     },
 
-	// Configure tool-specific properties.
-	// "customizations": {},
-
+	// Set environment variables
+	"containerEnv": {
+		"JAVA_HOME": "${HOME}/jvm",
+		"ANDROID_HOME": "${HOME}/android-sdk"
+	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [5000],
 	// "portsAttributes": {
