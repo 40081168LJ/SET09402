@@ -25,4 +25,7 @@ sudo dotnet workload restore      # restore MAUI workloads
                                   # install android dependencies. Env vars are set in devcontainer.json
 dotnet build -t:InstallAndroidDependencies -f:net8.0-android -p:AndroidSdkDirectory="${ANDROID_HOME}" -p:JavaSdkDirectory="${JAVA_HOME}" -p:AcceptAndroidSDKLicenses=True
 dotnet restore                  # restore project
+${ANDROID_HOME}/cmdline-tools/11.0/bin/sdkmanager --install  "emulator"
+echo y | ${ANDROID_HOME}/cmdline-tools/11.0/bin/sdkmanager --install  "system-images;android-34;google_apis;x86_64"
+${ANDROID_HOME}/cmdline-tools/11.0/bin/avdmanager create avd -d 30 --name Pixel_7_Pro -k "system-images;android-34;google_apis;x86_64"
 echo Done                       # report end of script
