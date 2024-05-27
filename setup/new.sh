@@ -12,7 +12,7 @@ START_DIR=$PWD                  # remember starting directory
 apt update                      # update apt repository information
 apt install default-jdk -y      # install jdk
 apt install android-sdk -y      # install Android sdk
-cd /usr/lib/android-sdk -y      # change into Android sdk directory
+cd /usr/lib/android-sdk         # change into Android sdk directory
                                 # then download cmdline_tools
 curl -o cli_tools.zip https://bdavison.napier.ac.uk/set09102/setup/commandlinetools-linux-11076708_latest.zip
 unzip -o cli_tools.zip          # Unzip cmdline_tools (including sdkmanager)
