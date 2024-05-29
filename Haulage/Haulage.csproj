@@ -20,6 +20,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
+		<!-- Android SDK Directory -->
+		<AndroidSdkDirectory>C:\Users\Liam_\MAUI\android</AndroidSdkDirectory>
+
 		<!-- Display name -->
 		<ApplicationTitle>Haulage</ApplicationTitle>
 
